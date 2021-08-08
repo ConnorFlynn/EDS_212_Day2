@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ##Derivatives in R
 
 ```{r}
-fx <- expression(x^2)
+fx <- expression(x ^ 2)
 
 df_dx <- D(expr = fx, name = 'x')
 
@@ -25,11 +25,13 @@ x <- 831
 eval(expr = df_dx)
 ```
 ```{r}
-gt <- expression(3 * t ^2 - 4 * cos(t))
+gt <- expression((3 * t ^2) - (4 * cos(t)))
 
 dg_dt <- D(expr = gt, name = 't')
 
 dg_dt
+
+
 
 
 ```
